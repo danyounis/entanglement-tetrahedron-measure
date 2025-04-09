@@ -1,0 +1,26 @@
+--------------------------------------------------
+PARAMETERS FOR INTERIOR MINIMIZATION (OVER 11θ/7φ)
+--------------------------------------------------
+nmins: 240
+itmax: 1.e+3
+ftol: 1.e-6
+da: 0.1 ! u(pi)
+
+-------------------------------------------------
+PARAMETERS FOR EXTERIOR MAXIMIZATION (OVER x,y,z)
+-------------------------------------------------
+e-ps: 50 ! population size
+e-mg: 100 ! max generations
+
+mutate_gaussian parameters
+e-std: 1.
+e-expected_num_mutations: 1
+e-hard_bounds: [(-np.inf,np.inf), (-np.inf,np.inf), (0.,np.inf)]
+
+uniform_crossover parameters
+e-p_swap: 0.4
+
+guess ranges for (x,y,z)
+e-gx: [-5.,5.]
+e-gy: [-5.,5.]
+e-gz: [0.,1.]

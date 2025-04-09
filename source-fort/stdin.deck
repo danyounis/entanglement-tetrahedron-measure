@@ -1,0 +1,19 @@
+! no. exterior maximizations
+nmaxs: 100
+collapse: 1.d-3
+
+! no. interior minimizations
+nmins: 600
+
+! range to initialize X vector
+rx: -5. 5.
+ry: -5. 5.
+rz: -5. 5.
+
+! Nelder-Mead simplex step sizes
+da: 0.1 ! u(pi)
+dX: 1. 1. 1.
+
+! max iterations / tolerances
+sup: 1000 0.
+inf: 1000 0.
